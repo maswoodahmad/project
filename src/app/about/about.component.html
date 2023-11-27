@@ -1,0 +1,32 @@
+<!-- about.component.html -->
+<div class="bg">
+<div class="about-container">
+    <mat-card class="example-card" raised>
+      <mat-card-content>
+        <h1>About MyApp</h1>
+  
+        <section>
+          <h2>Version</h2>
+          <p>Current Version: {{ version }}</p>
+        </section>
+  
+        <section>
+          <h2>Technology Stack</h2>
+          <ul>
+            <li *ngFor="let tech of technologyStack">{{ tech }}</li>
+          </ul>
+        </section>
+  
+        <section>
+          <h2>Development Team</h2>
+          <ul>
+            <li *ngFor="let teamMember of developmentTeam">{{ teamMember }}</li>
+          </ul>
+        </section>
+  
+        <!-- ... other sections ... -->
+  
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

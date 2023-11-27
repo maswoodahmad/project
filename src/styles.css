@@ -1,11 +1,14 @@
-/* styles.css or styles.scss */
-
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --accent-color: #f39c12;
 }
-html, body { height: 100%; }
+html, body { height: 100%;
+    box-sizing: border-box;
+}
 body { margin: 0; 
     
     background-color:var(--primary-color);

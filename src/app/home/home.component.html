@@ -1,9 +1,19 @@
-<!-- app.component.html or your relevant component's HTML file -->
-<mat-grid-list cols="2" rowHeight="100px">
-    <mat-grid-tile>
-        <button mat-raised-button class="custom-button" color="primary" (click)="searchEmployee()">Search Employee</button>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <button mat-raised-button class="custom-button" (click)="addEmployee()">Add Employee</button>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+    <div class="welcome">Welcome to XYZ Garage</div>
+    <div class="filler"></div>
+    <div class="button">
+
+        <button  color ="primary"  mat-raised-button >
+            
+            
+            <a mat-list-item [routerLink]="['/about']" >About US</a>
+       
+        
+        
+        </button>
+
+    </div>
+    <div class="filler2"></div>
+    <div class="filler3"></div>
+    <div class="filler4"></div>
+  </div>

@@ -1,0 +1,30 @@
+/* row-details-dialog.component.css */
+
+/* Styling the container */
+.dialog-container {
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the header */
+  .dialog-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling each data item */
+  .dialog-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling the strong tags */
+  .dialog-item strong {
+    margin-right: 10px;
+  }
+  
+  /* Styling the button */
+  .dialog-button {
+    margin-top: 20px;
+  }
+  

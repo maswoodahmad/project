@@ -11,7 +11,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { EmployeeService } from './employee.service';
+
+import { HttpClientModule } from '@angular/common/http';
+
+import { MatCardModule } from '@angular/material/card';
+
+import { GarageService } from './garage.service';
+
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -19,9 +27,12 @@ import { EmployeeService } from './employee.service';
     MainNavComponent,
    routingComp,
    
+   
   ],
+
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -30,10 +41,13 @@ import { EmployeeService } from './employee.service';
     MatIconModule,
     MatListModule,
     AgGridModule,
+    MatGridListModule,
+    MatCardModule,
+    MatDialogModule,
     MatGridListModule
  
   ],
-  providers: [EmployeeService],
+  providers: [GarageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

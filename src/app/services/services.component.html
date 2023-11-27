@@ -1,0 +1,20 @@
+
+<div [style]="styles">
+
+    <h1>
+        Services We Provide
+    </h1>
+    <br/>
+<ag-grid-angular
+class = "ag-theme-alpine"
+style="height :80% ; width:100%;"
+[rowData]="rowData"
+[columnDefs]="colDefs"
+
+(cellClicked)="onCellClicked($event)"
+>
+
+
+</ag-grid-angular>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="dialog-container">
+    <h2 class="dialog-header">Service Details</h2>
+    
+    <div class="dialog-item">
+      <strong>Service ID:</strong> {{ data.serviceId }}
+    </div>
+    
+    <div class="dialog-item">
+      <strong>Service Name:</strong> {{ data.serviceName }}
+    </div>
+    
+    <div class="dialog-item">
+      <strong>Description:</strong> {{ data.description }}
+    </div>
+    
+    <div class="dialog-item">
+      <strong>Price:</strong> {{ data.price | currency: 'INR' }}
+    </div>
+    
+    <button mat-button class="dialog-button" (click)="closeDialog()">Close</button>
+  </div>
+  
