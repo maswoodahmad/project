@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { GarageService } from '../garage.service';
 import { Observable } from 'rxjs';
@@ -5,6 +6,10 @@ import Garage from '../garage.model';
 import { ColDef } from 'ag-grid-community';
 import { RowDetailsDialogComponent } from '../row-details-dialog/row-details-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { ApiService } from '../api/api.service';
+
+
+declare function fileSave(data:any):any;
 // import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -13,6 +18,7 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
+
 
   public styles ={
     display: 'flex',
@@ -26,19 +32,26 @@ export class ServicesComponent {
 
   
 
-  public rowData: Garage[] = [];
-  constructor( private _garageService: GarageService, private dialog: MatDialog) {
+  public rowData: any = [];
+  constructor( 
+    private _garageService: GarageService,
+     private dialog: MatDialog,
+     private _apiService:ApiService
+     
+     ) {
     
   }
 
   ngOnInit() {
     
-    this._garageService.getServices().subscribe(
+    this._apiService.getMessage().subscribe(
       data => {
-      
-        console.log(data);
-        this.rowData=data;
-      }
+        
+       console.log(data);
+
+       this.rowData=data;
+        
+  }
         ,
       error=>console.error(error)
 )
@@ -65,10 +78,40 @@ export class ServicesComponent {
 
   }
 
-  
 
- 
+  submit() {
+    
 
-  
+    // fileSave(this.rowData);
+
+    this._apiService.getMessage().subscribe((data:any) => { 
+      console.log(data);
+
+
+
+  }); 
+
+console.log(this.rowData);
+
+
+
+  this._apiService
+.addData(this.rowData)
+.subscribe(
+  response=> console.log("server response:", response),
+  error=> console.log("error message", error)
+)
+
 
 }
+}  
+
+  
+
+
+
+  
+
+
+
+

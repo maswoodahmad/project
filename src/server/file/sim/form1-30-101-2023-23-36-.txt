@@ -1,0 +1,92 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "api data gchvjbkl",
+    "description": "Regular oil change to ensure optimal engine performance.",
+    "price": 2000
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Brake Inspection",
+    "description": "Thorough inspection of the braking system for safety.",
+    "price": 400
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Tire Rotation",
+    "description": "Rotation of tires to ensure even wear and extend tire life.",
+    "price": 2000
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Battery Replacement",
+    "description": "Replacement of the car battery with a new one.",
+    "price": 3500
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Air Filter Replacement",
+    "description": "Replacement of the engine air filter for improved efficiency.",
+    "price": 2500
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Wheel Alignment",
+    "description": "Alignment of wheels to ensure proper handling and tire wear.",
+    "price": 3000
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Coolant Flush",
+    "description": "Flush and replacement of the engine coolant for cooling system maintenance.",
+    "price": 800
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Transmission Fluid Change",
+    "description": "Replacement of the transmission fluid for smooth gear shifts.",
+    "price": 100
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Spark Plug Replacement",
+    "description": "Replacement of spark plugs for improved engine performance.",
+    "price": 300
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Exhaust System Repair",
+    "description": "Repair and replacement of components in the exhaust system.",
+    "price": 15000
+  },
+  {
+    "serviceId": 11,
+    "serviceName": "Suspension System Inspection",
+    "description": "Inspection and maintenance of the car's suspension system.",
+    "price": 45
+  },
+  {
+    "serviceId": 12,
+    "serviceName": "Headlight Bulb Replacement",
+    "description": "Replacement of headlight bulbs for proper illumination.",
+    "price": 1500
+  },
+  {
+    "serviceId": 13,
+    "serviceName": "Power Steering Fluid Flush",
+    "description": "Flush and replacement of power steering fluid for optimal steering.",
+    "price": 55
+  },
+  {
+    "serviceId": 14,
+    "serviceName": "Air Conditioning Service",
+    "description": "Service and maintenance of the car's air conditioning system.",
+    "price": 900
+  },
+  {
+    "serviceId": 15,
+    "serviceName": "Car Wash and Detailing",
+    "description": "Exterior and interior cleaning, and detailing services.",
+    "price": 350
+  }
+]
